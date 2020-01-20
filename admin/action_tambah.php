@@ -29,8 +29,36 @@
 	$keperluan	= $_POST['keperluan'];
 	date_default_timezone_set('Asia/Jakarta');
     $tanggal    = date("d M Y");
+    $hari		= date('D');
+    switch ($hari) {
+    	case 'Sun':
+    		$hari_ini="Minggu";
+    		break;
+    	case 'Mon':
+    		$hari_ini="Senin";
+    		break;
+    	case 'Tue':
+    		$hari_ini="Selasa";
+    		break;
+    	case 'Wed':
+    		$hari_ini="Rabu";
+    		break;
+    	case 'Thu':
+    		$hari_ini="Kamis";
+    		break;
+    	case 'Fri':
+    		$hari_ini="Jumat";
+    		break;
+    	case 'Sat':
+    		$hari_ini="Sabtu";
+    		break;
+    	default:
+    		$hari_ini="Hari tidak diketahui";
+    		break;
+    }
+
 	
-	$sql = "INSERT INTO tamu values('','$id_admin','$nama','$email','$alamat','$keperluan','$tanggal')";
+	$sql = "INSERT INTO tamu values('','$id_admin','$nama','$email','$alamat','$keperluan','$tanggal','$hari_ini')";
 	if (mysqli_query($koneksi, $sql)){
 		echo "<script>
                 swal ('Berhasil!', 'Data Berhasil Diinput', 'success');
@@ -45,7 +73,7 @@
 
 ?>
 <script language=javascript>
-setTimeout("location.href='index.php'", 1500);
+setTimeout("location.href='index.php'", 1100);
 </script>
 </body>
 </html>

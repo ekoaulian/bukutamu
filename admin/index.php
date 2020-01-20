@@ -16,7 +16,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Admin</title>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Admin</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 	<link rel="stylesheet" type="text/css" href="../asset/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../asset/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../asset/css/ionicons.min.css">
@@ -24,13 +27,13 @@
 	<link rel="stylesheet" type="text/css" href="../asset/css/all-skins.min.css">
 </head>
 <body>
-<body class="hold-transition skin-blue fixed sidebar-mini">
+<body class="hold-transition skin-yellow fixed sidebar-mini">
 <!-- Site wrapper -->
 <div class="wrapper">
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="../../index2.html" class="logo">
+    <a href="#" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>B</b>T</span>
       <!-- logo for regular state and mobile devices -->
@@ -56,7 +59,7 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="../img/avatar04.png" class="img-circle" alt="User Image">
+          <img src="../img/avatar3.png" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>Admin</p>
@@ -77,7 +80,7 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
-        <li><a href="index.php"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+        <li class="active"><a href="index.php"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
         
         <li><a href="bukutamu.php"><i class="fa fa-book"></i> <span>Buku Tamu</span></a></li>
         <li class="header">LABELS</li>
@@ -98,7 +101,7 @@
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Admin</li>
+        <li class="active">Form Buku Tamu</li>
       </ol>
     </section>
 
@@ -107,7 +110,7 @@
       
       <div class="box">
         <div class="box-header with-border">
-          <h3 class="box-title">Title</h3>
+          <h3 class="box-title">Form Buku Tamu</h3>
         </div>
         <div class="box-body">
           <form role="form" action="action_tambah.php" method="post">
